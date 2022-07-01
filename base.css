@@ -1,0 +1,98 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --height-header: 86px;
+    --height-footer: 40px;
+    --bg-soldout: url(https://file.hstatic.net/1000344185/file/2acs1lsce3lipqg4svuratwdtnzue9zxcq_0948176a7b4746068d045d05c6d9c30b.png);
+}
+
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 1rem = 16px nên đổi 1rem = 10px cho dễ dùng */
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif !important;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+
+.margin-left24 {
+    margin-left: 24px;
+}
+
+.margin-right24 {
+    margin-right: 24px;
+}
+
+.position {
+    position: relative;
+}
+
+.grid {
+    width: 1100px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.grid__full-with {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@keyframes scale {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+
+@keyframes down {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+.italics {
+    font-style: italic;
+}
