@@ -14,6 +14,18 @@ function fixed_header() {
     }
 }
 
+var headerMobile = document.querySelector('.header-mobile');
+window.addEventListener('scroll', fixed_header1);
+
+function fixed_header1() {
+    if (window.scrollY > headerMobile.offsetHeight) {
+        headerMobile.classList.add('active');
+    }
+    else {
+        headerMobile.classList.remove('active');
+    }
+}
+
 
 
 // xử lí click ẩn/ hiện khung search
@@ -106,23 +118,37 @@ valueSizes.forEach(function (valueSize) {
     }
 });
 
+// xử lí tag a href="#" ngăn ngừa load lại trang 
+var links = document.querySelectorAll('a[href="#"]');
 
-// forgot password
+links.forEach(function (link) {
+    link.onclick = function (e) {
+        e.preventDefault();
+    }
+});
 
-var forgot = document.querySelector('#forgot');
-var login = document.querySelector('#login');
-var cancelLink = document.querySelector('#cancel-link');
-var loginClick = document.querySelector('#login-click');
+//search mobile 
 
-forgot.style.display = "none";
-loginClick.onclick = function () {
-    forgot.style.display = "block";
-    login.style.display = "none";
+
+var searchIcon = document.querySelector('.mobile-search__icon');
+var searchElement = document.querySelector('.mobile-search__input');
+
+searchIcon.onclick = function () {
+    searchElement.classList.toggle('block');
 }
 
-cancelLink.onclick = function () {
-    login.style.display = "block";
-    forgot.style.display = "none";
-}
 
 
+// var loginHover = document.querySelector('.wrapper-moblie-login');
+// var loginBlock = document.querySelector('.login__login');
+// var loginIcon = document.querySelector('.fa-angle-down');
+
+// loginHover.onmouseover = function () {
+//     loginBlock.classList.add('block');
+//     loginIcon.classList.add('rotate180');
+// }
+// loginBlock.onmouseleave = function () {
+//     loginBlock.classList.remove('block');
+//     loginIcon.classList.remove('rotate180');
+
+// }

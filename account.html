@@ -264,7 +264,29 @@
 
     <script src="main.js"></script>
 
+    <script>
 
+        // forgot password
+
+        var forgot = document.querySelector('#forgot');
+        var login = document.querySelector('#login');
+        var cancelLink = document.querySelector('#cancel-link');
+        var loginClick = document.querySelector('#login-click');
+
+        forgot.style.display = "none";
+        loginClick.onclick = function () {
+            forgot.style.display = "block";
+            login.style.display = "none";
+        }
+
+        cancelLink.onclick = function () {
+            login.style.display = "block";
+            forgot.style.display = "none";
+        }
+
+
+
+    </script>
 
 </body>
 
