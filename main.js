@@ -137,18 +137,23 @@ searchIcon.onclick = function () {
     searchElement.classList.toggle('block');
 }
 
+var wrapperMenuMoblie = document.querySelector('.wrapper-menuMoblie');
+var closeMenuMoblieIcon = document.querySelector('.menuMoblie-close');
+closeMenuMoblieIcon.onclick = function () {
+    wrapperMenuMoblie.style.display = 'none';
 
+}
 
-// var loginHover = document.querySelector('.wrapper-moblie-login');
-// var loginBlock = document.querySelector('.login__login');
-// var loginIcon = document.querySelector('.fa-angle-down');
+wrapperMenuMoblie.onclick = function () {
+    wrapperMenuMoblie.style.display = 'none';
+}
 
-// loginHover.onmouseover = function () {
-//     loginBlock.classList.add('block');
-//     loginIcon.classList.add('rotate180');
-// }
-// loginBlock.onmouseleave = function () {
-//     loginBlock.classList.remove('block');
-//     loginIcon.classList.remove('rotate180');
+var menuMoblie = document.querySelector('.menuMoblie');
+menuMoblie.onclick = function (e) {
+    e.stopPropagation();
+}
 
-// }
+var mobileMenuNav = document.querySelector('.mobile-menu');
+mobileMenuNav.onclick = function () {
+    wrapperMenuMoblie.style.display = 'block';
+}

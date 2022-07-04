@@ -219,7 +219,7 @@
 .active {
     position: fixed;
     transform-origin: top;
-    animation: down 1s linear;
+    animation: down 0.6s linear;
 }
 
 .header-search {
@@ -258,7 +258,6 @@
 .form-contact {
     width: 360px;
     min-height: 100px;
-
     text-align: center;
     margin: auto;
 
@@ -904,7 +903,6 @@ form {
     font-weight: bold;
 }
 
-.login-group-input {}
 
 .login-input {
     width: 100%;
@@ -996,7 +994,6 @@ textarea {
     font-weight: 900;
 }
 
-.about-name {}
 
 .about-title {
     font-size: 3.6rem;
@@ -1011,6 +1008,9 @@ textarea {
     color: #484848;
     margin-bottom: 8px;
 
+}
+.none {
+    display: none;
 }
 
 .about-img {
@@ -1035,7 +1035,6 @@ textarea {
     text-align: center;
 }
 
-.store-wrapper {}
 
 .store-name {
     font-size: 4.2rem;
@@ -1073,7 +1072,6 @@ textarea {
 
 }
 
-.return-policy-text--bold {}
 
 .info-social {
     font-size: 2.4rem;
@@ -1086,7 +1084,6 @@ textarea {
     margin: 40px 0 30px 0;
 }
 
-.return-policy-social {}
 
 .return-policy-text {
     font-size: 2.4rem;
@@ -1103,7 +1100,6 @@ textarea {
     color: #484848;
 }
 
-.form-forgot-password {}
 
 .forgot-password__label {
     font-size: 1.5rem;
@@ -1138,11 +1134,8 @@ textarea {
     margin-bottom: 16px;
 }
 
-.form-group__forgot-password {}
 
-
-
-/*  custom ổ khóa không free :) */
+/*  custom ổ khóa không free */
 .fa-solid1::after {
     display: block;
     content: "";
