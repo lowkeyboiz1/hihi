@@ -1,0 +1,8 @@
+
+.mobile-cart__bonus {
+    transform: translate(-50%, calc(-50% + 4px));
+}
+
+.wrapper-moblie-login {
+    display: flex;
+}

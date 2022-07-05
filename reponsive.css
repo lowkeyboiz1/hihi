@@ -16,6 +16,11 @@
 
 /* tablet and mobile */
 @media (max-width: 1024px) {
+
+    .item-content--name a {
+        font-size: 1.4rem;
+    }
+
     .wrapper-header {
         display: none;
     }
@@ -31,6 +36,14 @@
     .chat-messenger {
         display: none;
     }
+
+    .pagination {
+        justify-content: center !important;
+    }
+    .product-pagination {
+        margin-bottom: 80px;
+
+    }
 }
 
 /* Tablet */
@@ -38,6 +51,8 @@
     .header-mobile {
         display: block;
     }
+
+
 
 }
 
@@ -183,6 +198,7 @@
     position: absolute;
     bottom: 16px;
     left: 38px;
+    transition: all 0.5s ease;
 
 }
 
@@ -239,9 +255,7 @@
     cursor: pointer;
 }
 
-.wrapper-moblie-login:hover .login__login {
-    display: block;
-}
+
 
 
 .wrapper-moblie-login::after {
@@ -287,7 +301,7 @@
     right: 0;
     background-color: #fff;
     height: 100%;
-    width: 230px;
+    width: 300px;
     padding: 20px;
     display: block;
     animation: fadeIn ease 0.5s;
@@ -337,12 +351,30 @@
     color: #f37841;
 }
 
+
+.animation-rotate {
+    animation: rotate 0.5s ease;
+    transform: rotate(180deg);
+
+}
+
 @keyframes fadeIn {
     0% {
         width: 0;
     }
 
     100% {
-        width: 230px;
+        width: 300px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(180deg);
     }
 }

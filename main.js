@@ -137,10 +137,25 @@ searchIcon.onclick = function () {
     searchElement.classList.toggle('block');
 }
 
+
+// acount
+
+var login = document.querySelector('.wrapper-moblie-login');
+var login__login = document.querySelector('.login__login');
+var mobileLogin__icon = document.querySelector('.mobile-login__icon');
+
+login.onclick = function () {
+    login__login.classList.toggle('block');
+    mobileLogin__icon.classList.toggle('animation-rotate');
+
+}
+
+//modal and close menu
 var wrapperMenuMoblie = document.querySelector('.wrapper-menuMoblie');
 var closeMenuMoblieIcon = document.querySelector('.menuMoblie-close');
 closeMenuMoblieIcon.onclick = function () {
     wrapperMenuMoblie.style.display = 'none';
+ 
 
 }
 
@@ -156,4 +171,5 @@ menuMoblie.onclick = function (e) {
 var mobileMenuNav = document.querySelector('.mobile-menu');
 mobileMenuNav.onclick = function () {
     wrapperMenuMoblie.style.display = 'block';
+    
 }
