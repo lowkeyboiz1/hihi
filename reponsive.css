@@ -1,3 +1,7 @@
+:root {
+    --height-content: 120px;
+}
+
 /* PC >=1024px 
     tablet >=740px & < 1024px 
     mobile < 740px 
@@ -25,9 +29,7 @@
         display: none;
     }
 
-    .footer {
-        position: static;
-    }
+
 
     .container {
         margin-top: 90px;
@@ -40,10 +42,24 @@
     .pagination {
         justify-content: center !important;
     }
+
     .product-pagination {
         margin-bottom: 80px;
 
     }
+
+    .content-sale,
+    .store-main,
+    .hiring-main,
+    .main-login,
+    .form, .content__cart {
+        margin-top: var(--height-content);
+    }
+
+
+
+
+
 }
 
 /* Tablet */
@@ -60,6 +76,47 @@
 @media (max-width: 739px) {
     .container-item {
         width: 100%;
+    }
+
+    .store-text {
+        padding: 0px 26px;
+    }
+
+    .hiring-img {
+
+        height: 400px;
+    }
+
+    .hiring-main,
+    .main-login,
+    .form-register,
+    .form-login, .wrapper-cart {
+        width: 86%;
+    }
+
+
+    .form-register,
+    .form-login {
+        margin: auto;
+    }
+
+    .form-register {
+        margin-bottom: 120px;
+    }
+
+    .hiring__desc-img, .content__cart-img, .content__cart-shopping--button {
+        width: 100%;
+    }
+
+    .content__cart {
+      height: 100vh;
+    }
+    .wrapper-2form {
+        display: block;
+    }
+
+    .footer {
+        position: static;
     }
 
     .footer {
