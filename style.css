@@ -194,6 +194,11 @@
     margin-right: 16px;
 }
 
+.footer-item:hover a{
+    cursor: pointer;
+    color: #000;
+}
+
 .footer-item-last {
     margin-right: 0;
 }
@@ -317,9 +322,9 @@
 .content__cart-shopping--button {
     font-size: 1.8rem;
     background: #000000;
-    height: 36px;
+    height: 40px;
     color: var(--white-color);
-    line-height: 36px;
+    line-height: 40px;
     padding: 0 16px;
     letter-spacing: 1.1px;
     opacity: 0.8;

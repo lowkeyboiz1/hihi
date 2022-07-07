@@ -52,10 +52,10 @@
     .store-main,
     .hiring-main,
     .main-login,
-    .form, .content__cart {
+    .form,
+    .content__cart {
         margin-top: var(--height-content);
     }
-
 
 
 
@@ -68,15 +68,30 @@
         display: block;
     }
 
+    .product {
+        margin-top: var(--height-content) !important;
+        width: 90%;
+        margin: 0 auto;
+    }
 
+    .product-detail-give-sale {
+        margin-top: 24px;
+    }
 
 }
 
 /* mobile */
 @media (max-width: 739px) {
+
+
     .container-item {
         width: 100%;
     }
+
+    .container {
+        overflow-x: hidden;
+    }
+
 
     .store-text {
         padding: 0px 26px;
@@ -90,7 +105,8 @@
     .hiring-main,
     .main-login,
     .form-register,
-    .form-login, .wrapper-cart {
+    .form-login,
+    .wrapper-cart {
         width: 86%;
     }
 
@@ -104,15 +120,82 @@
         margin-bottom: 120px;
     }
 
-    .hiring__desc-img, .content__cart-img, .content__cart-shopping--button {
+    .about-main,
+    .content,
+    .return-policy-main {
+        margin-top: var(--height-content) !important;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-title {
+        font-size: 3rem;
+    }
+
+    .about-title {
+        font-size: 2.95rem;
+    }
+
+    .about-img {
+        margin: 20px 0;
+    }
+
+    .form-contact {
         width: 100%;
     }
 
-    .content__cart {
-      height: 100vh;
+
+    .hiring__desc-img,
+    .content__cart-img,
+    .content__cart-shopping--button,
+    .about-img {
+        width: 100%;
+
     }
+
+    .content__cart,
+    .content {
+        height: 100vh;
+    }
+
     .wrapper-2form {
         display: block;
+    }
+
+    .product-list {
+        height: 43px;
+    }
+
+    .product-list-img {
+        width: 86%;
+        margin: auto;
+    }
+
+    .product-item {
+        height: 100%;
+    }
+
+    .product {
+        display: block;
+        width: 100%;
+    }
+
+    .product__item {
+        width: 100%;
+    }
+
+    .return-policy-name {
+        font-size: 3rem;
+    }
+
+    .return-policy-section {
+        font-size: 2.88rem;
+        line-height: 3.8rem;
+    }
+
+    .info-social {
+        font-size: 2.2rem;
+        line-height: 3rem;
     }
 
     .footer {
@@ -362,6 +445,32 @@
     padding: 20px;
     display: block;
     animation: fadeIn ease 0.5s;
+}
+
+.product__info {
+    width: 90%;
+    margin: 30px auto 0 auto;
+}
+
+.product-detail-name {
+    font-size: 2rem;
+}
+
+.product-detail-name::after {
+    margin: 24px 0;
+}
+
+.checked {
+    height: 16px;
+}
+
+.product-detail-size {
+    width: 40px;
+    height: 40px;
+}
+
+.product-detail-size label {
+    line-height: 40px;
 }
 
 .menuMoblie-top {
