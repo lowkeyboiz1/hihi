@@ -155,8 +155,6 @@ var wrapperMenuMoblie = document.querySelector('.wrapper-menuMoblie');
 var closeMenuMoblieIcon = document.querySelector('.menuMoblie-close');
 closeMenuMoblieIcon.onclick = function () {
     wrapperMenuMoblie.style.display = 'none';
- 
-
 }
 
 wrapperMenuMoblie.onclick = function () {
@@ -171,5 +169,37 @@ menuMoblie.onclick = function (e) {
 var mobileMenuNav = document.querySelector('.mobile-menu');
 mobileMenuNav.onclick = function () {
     wrapperMenuMoblie.style.display = 'block';
-    
+
 }
+
+// xử lí tắt modal thêm giỏ hàng
+var overplay = document.querySelector('.overplay');
+var closeModalAddCart = document.querySelector('.close-icon-wrapper');
+if(closeModalAddCart) {
+    closeModalAddCart.onclick = function () {
+        overplay.style.display = 'none';
+    }
+}
+
+if(overplay) {
+    overplay.onclick = function () {
+        overplay.style.display = 'none';
+    }
+}
+
+var modalAddCart = document.querySelector('.modal-add-cart');
+if (modalAddCart) {
+    
+    modalAddCart.onclick = function (e) {
+        e.stopPropagation();
+    }
+}
+
+var addCartBtn = document.querySelector('.product-detail-add-cart');
+if(addCartBtn) {
+    addCartBtn.onclick = function () {
+        overplay.style.display = 'block';
+    
+    }
+}
+    
